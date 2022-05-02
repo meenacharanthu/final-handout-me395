@@ -1,0 +1,12 @@
+https://www.analyticsvidhya.com/blog/2021/05/image-processing-using-opencv-with-practical-examples/
+
+https://pypi.org/project/opencv-python/
+
+https://docs.opencv.org/4.x/
+
+https://www.analyticsvidhya.com/blog/2021/05/image-processing-using-opencv-with-practical-examples/
+
+https://www.analyticsvidhya.com/blog/2021/04/top-python-libraries-for-image-processing-in-2021/
+
+https://docs.opencv.org/3.4/d7/d4d/tutorial_py_thresholding.html
+

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://semantic-ui.com/examples/homepage.html# -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Standard Meta -->
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- Site Properties -->
+  <title>Me395 Group Project</title>
+  <link rel="stylesheet" type="text/css" href="./Homepage - Semantic_files/reset.css">
+  <link rel="stylesheet" type="text/css" href="./Homepage - Semantic_files/site.css">
+
+  <link rel="stylesheet" type="text/css" href="./Homepage - Semantic_files/container.css">
+  <link rel="stylesheet" type="text/css" href="./Homepage - Semantic_files/grid.css">
+  <link rel="stylesheet" type="text/css" href="./Homepage - Semantic_files/header.css">
+  <link rel="stylesheet" type="text/css" href="./Homepage - Semantic_files/image.css">
+  <link rel="stylesheet" type="text/css" href="./Homepage - Semantic_files/menu.css">
+
+  <link rel="stylesheet" type="text/css" href="./Homepage - Semantic_files/divider.css">
+  <link rel="stylesheet" type="text/css" href="./Homepage - Semantic_files/dropdown.css">
+  <link rel="stylesheet" type="text/css" href="./Homepage - Semantic_files/segment.css">
+  <link rel="stylesheet" type="text/css" href="./Homepage - Semantic_files/button.css">
+  <link rel="stylesheet" type="text/css" href="./Homepage - Semantic_files/list.css">
+  <link rel="stylesheet" type="text/css" href="./Homepage - Semantic_files/icon.css">
+  <link rel="stylesheet" type="text/css" href="./Homepage - Semantic_files/sidebar.css">
+  <link rel="stylesheet" type="text/css" href="./Homepage - Semantic_files/transition.css">
+  
+  <style type="text/css">
+
+    .hidden.menu {
+      display: none;
+    }
+
+    .masthead.segment {
+      min-height: 700px;
+      padding: 1em 0em;
+    }
+    .masthead .logo.item img {
+      margin-right: 1em;
+    }
+    .masthead .ui.menu .ui.button {
+      margin-left: 0.5em;
+    }
+    .masthead h1.ui.header {
+      margin-top: 3em;
+      margin-bottom: 0em;
+      font-size: 4em;
+      font-weight: normal;
+    }
+    .masthead h2 {
+      font-size: 1.7em;
+      font-weight: normal;
+    }
+
+    .ui.vertical.stripe {
+      padding: 8em 0em;
+    }
+    .ui.vertical.stripe h3 {
+      font-size: 2em;
+    }
+    .ui.vertical.stripe .button + h3,
+    .ui.vertical.stripe p + h3 {
+      margin-top: 3em;
+    }
+    .ui.vertical.stripe .floated.image {
+      clear: both;
+    }
+    .ui.vertical.stripe p {
+      font-size: 1.33em;
+    }
+    .ui.vertical.stripe .horizontal.divider {
+      margin: 3em 0em;
+    }
+
+    .quote.stripe.segment {
+      padding: 0em;
+    }
+    .quote.stripe.segment .grid .column {
+      padding-top: 5em;
+      padding-bottom: 5em;
+    }
+
+    .footer.segment {
+      padding: 5em 0em;
+    }
+
+    .secondary.pointing.menu .toc.item {
+      display: none;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .ui.fixed.menu {
+        display: none !important;
+      }
+      .secondary.pointing.menu .item,
+      .secondary.pointing.menu .menu {
+        display: none;
+      }
+      .secondary.pointing.menu .toc.item {
+        display: block;
+      }
+      .masthead.segment {
+        min-height: 350px;
+      }
+      .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+      }
+      .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+      }
+    }
+
+
+  </style>
+
+  <script src="./Homepage - Semantic_files/jquery.min.js.download"></script>
+  <script src="./Homepage - Semantic_files/visibility.js.download"></script>
+  <script src="./Homepage - Semantic_files/sidebar.js.download"></script>
+  <script src="./Homepage - Semantic_files/transition.js.download"></script>
+  <script>
+  $(document)
+    .ready(function() {
+
+      // fix menu when passed
+      $('.masthead')
+        .visibility({
+          once: false,
+          onBottomPassed: function() {
+            $('.fixed.menu').transition('fade in');
+          },
+          onBottomPassedReverse: function() {
+            $('.fixed.menu').transition('fade out');
+          }
+        })
+      ;
+
+      // create sidebar and attach to menu open
+      $('.ui.sidebar')
+        .sidebar('attach events', '.toc.item')
+      ;
+
+    })
+  ;
+  </script>
+</head>
+<body class="pushable">
+
+<!-- Following Menu -->
+<div class="ui large top fixed menu transition hidden">
+  <div class="ui container">
+    <a class="active item" href="#section1">Home</a>
+    
+    <div class="ui simple dropdown item">
+      About
+      <i class="dropdown icon"></i>
+      <div class="menu">
+        <a class="item" href="#section2">Introduction</a>
+        <a class="item" href="#section3">Block Diagram</a>
+        <a class="item" href="#section4">Future works</a>
+      </div>
+    </div>
+    
+    <a class="item" href="imageprocessing-work/index.html">Work</a>
+    <a class="item" href="https://www.iitp.ac.in/index.php/en-us/">IIT Patna</a>
+    <a class="item" href="#section5">Team</a>
+    <div class="right menu">
+      <div class="item">
+        <a class="ui button">References</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sidebar Menu -->
+<div class="ui vertical inverted sidebar menu left">
+  <a class="active item" href="#section1">Home</a>
+  
+  <div class="ui simple dropdown item">
+    About
+    <i class="dropdown icon"></i>
+    <div class="menu">
+      <a class="item" href="#section2">Introduction</a>
+      <a class="item" href="#section3">Block Diagram</a>
+      <a class="item" href="#section4">Future works</a>
+    </div>
+  </div>
+  
+  <a class="item" href="imageprocessing-work/index.html">Work</a>
+  <a class="item" href="https://www.iitp.ac.in/index.php/en-us/">IIT Patna</a>
+  <a class="item" href="#section5">Team</a>
+  <a class="item">Refernces</a>
+</div>
+
+
+<!-- Page Contents -->
+<div class="pusher">
+  <div class="ui inverted vertical masthead center aligned segment">
+
+    <div class="ui container">
+      <div class="ui large secondary inverted pointing menu">
+        <a class="toc item">
+          <i class="sidebar icon"></i>
+        </a>
+        <a class="active item" href="#section1">Home</a>
+        
+        <div class="ui simple dropdown item">
+          About
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="item" href="#section2">Introduction</a>
+            <a class="item" href="#section3">Block Diagram</a>
+            <a class="item" href="#section4">Future works</a>
+          </div>
+        </div>
+        
+        <a class="item" href="imageprocessing-work/index.html">Work</a>
+        <a class="item" href="https://www.iitp.ac.in/index.php/en-us/">IIT Patna</a>
+        <a class="item" href="#section5">Team</a>
+        <div class="right item">
+          <a class="ui inverted button">References</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="ui text container" id="section1">
+      <h1 class="ui inverted header">
+        Image-Processing
+      </h1>
+      <h2>Measuring the dimensions of an object</h2>
+      <a class="ui huge primary button" href="#section2">Get Started </a>
+    </div>
+
+  </div>
+
+  <div class="ui vertical stripe segment" id="section2">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="eight wide column">
+          <h3 class="ui header">What is Image Processing?</h3>
+          <p>Image processing is a method to perform some operations on an image, in order to get an enhanced image or to extract some useful information from it. It is a type of signal processing in which input is an image and output may be image or characteristics/features associated with that image.
+          </p>
+          <h3 class="ui header">Abstract</h3>
+          <p>Measuring objects within an image or frame can be an important capability for many applications where computer vision is required instead of making physical measurements.
+          </p>
+        </div>
+        <div class="six wide right floated column">
+          <img src="./Homepage - Semantic_files/images-1.jpg" class="ui large bordered rounded image">
+        </div>
+      </div>
+      <div class="row">
+        <div class="center aligned column">
+          <a class="ui huge button" href="imageprocessing-work/index.html">Check Them Out</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ui vertical stripe quote segment" id="section3">
+    <div class="ui equal width stackable internally celled grid">
+      <div class="center aligned row">
+        <div class="column">
+          <img src="./Homepage - Semantic_files/flow.jpg" class="ui centered medium image">
+        </div>
+        <div class="column">
+          <h3>Block Diagram of proposed Scheme</h3>
+          <p>An RGB image can be viewed as three images( a red scale image, a green scale image and a blue scale image) stacked on top of each other. An RGB image is basically a M*N*3 array of colour pixel, where each colour pixel is a triplet which corresponds to red, blue and green colour component of RGB image at a specified spatial location.</p>
+          <p>Similarly, A Grayscale image can be viewed as a single layered image. A grayscale image is basically M*N array whose values have been scaled to represent intensities.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui vertical stripe segment" id="section4">
+    <div class="ui text container">
+      <h3 class="ui header">Working Principle.</h3>
+      <p>1.  Run the program, select the desired image.</p>
+        <p>2.  After Selection, draw the object boundaries using mouse.</p>
+        <p>3.  The RGB image is converted to black and white image using Color_BGR2GRAY.</p>
+        <p>4.  The object is then converted to mm or cm using conversion depending on scale.</p>
+        
+      <p> 
+        5.  Finally the dimensions of the object is determined.
+        
+      </p>
+      <h4 class="ui horizontal header divider">
+        <a>Future Works</a>
+      </h4>
+      <h3 class="ui header">Applications</h3>
+      <p>The applications are not restricted to the bio-medical field but can extend to any field
+        that requires classification of different objects based on their physical appearance. This
+        may include quality inspection in assembly lines, artificial robotic intelligence,
+        computer vision, recognition of vehicles at toll booths or traffic signals for traffic status
+        determination, etc</p>
+    </div>
+  </div>
+
+
+  <div class="ui inverted vertical footer segment" id="section5">
+    <div class="ui container">
+      <div class="ui stackable inverted divided equal height stackable grid">
+        <div class="three wide column">
+          <h4 class="ui inverted header">Group Members</h4>
+          <div class="ui inverted link list">
+            <a  class="item">Madhu Sri Kiran</a>
+            <a  class="item">Meenakshi</a>
+            <a  class="item">Ganesh Kumar</a>
+            <a  class="item">Manoj Kumar</a>
+            <a  class="item">Vijay</a>
+          </div>
+        </div>
+       <!-- <div class="three wide column">
+          <h4 class="ui inverted header">Services</h4>
+          <div class="ui inverted link list">
+            <a href="https://semantic-ui.com/examples/homepage.html#" class="item">Banana Pre-Order</a>
+            <a href="https://semantic-ui.com/examples/homepage.html#" class="item">DNA FAQ</a>
+            <a href="https://semantic-ui.com/examples/homepage.html#" class="item">How To Access</a>
+            <a href="https://semantic-ui.com/examples/homepage.html#" class="item">Favorite X-Men</a>
+          </div>
+        </div>  -->
+        <div class="seven wide column">
+        <!--  <h4 class="ui inverted header">Footer Header</h4> -->
+          <p style="padding-top: 10%;"><i class="fa fa-copyright"> </i> Copyright 2021  
+            | all rights reserved<br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+</body></html>

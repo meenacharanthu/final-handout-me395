@@ -1,0 +1,7 @@
+https://www.datacamp.com/community/tutorials/gui-tkinter-python?utm_source=adwords_ppc&utm_medium=cpc&utm_campaignid=14989519638&utm_adgroupid=127836677279&utm_device=c&utm_keyword=&utm_matchtype=b&utm_network=g&utm_adpostion=&utm_creative=332602034364&utm_targetid=aud-299261629574:dsa-429603003980&utm_loc_interest_ms=&utm_loc_physical_ms=9040202&gclid=Cj0KCQiAys2MBhDOARIsAFf1D1c9AnjDqe2lGIXzJ5O4MRm3C6bKv9ALsPF2GEjEmdXqbwtd7NoaG14aAvcaEALw_wcB
+
+https://www.geeksforgeeks.org/create-first-gui-application-using-python-tkinter/
+
+youtube link
+https://www.youtube.com/watch?v=_PHJvjQJa3w
+
